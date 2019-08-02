@@ -1,0 +1,37 @@
+﻿@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery csrf
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>支付</h1>
+<form action="/pay/post" method="post">
+    @Html.AntiForgeryToken()
+    <input name="user" placeholder="姓名" />
+    <input name="price" placeholder="金额" />
+    <button type="submit">提交</button>
+    <button type="button" id="btnajax">ajax提交</button>
+</form>
+
+@section Scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("#btnajax").click(function () {
+                $.ajax({
+                    url: "/pay/post",
+                    dataType: "text",
+                    data: {
+                        user: $("input[name=user]").val(),
+                        price: $("input[name=price]").val()
+                    },
+                    headers: {
+                        "RequestVerificationToken": '@csrf.GetAndStoreTokens(Context).RequestToken'
+                    },
+                    type: "post",
+                    success: function (res) {
+                        alert(res);
+                    }
+                });
+            })
+        })
+    </script>
+}

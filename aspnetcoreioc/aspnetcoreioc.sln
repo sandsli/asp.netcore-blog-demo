@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetcoreioc", "aspnetcoreioc\aspnetcoreioc.csproj", "{9CC9D312-8D34-47F7-AF0D-3DAEAC6949FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetioc", "..\aspnetioc\aspnetioc.csproj", "{53E3A92C-1377-4B03-9D42-89A5365AC7AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CC9D312-8D34-47F7-AF0D-3DAEAC6949FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC9D312-8D34-47F7-AF0D-3DAEAC6949FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC9D312-8D34-47F7-AF0D-3DAEAC6949FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC9D312-8D34-47F7-AF0D-3DAEAC6949FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53E3A92C-1377-4B03-9D42-89A5365AC7AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53E3A92C-1377-4B03-9D42-89A5365AC7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53E3A92C-1377-4B03-9D42-89A5365AC7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53E3A92C-1377-4B03-9D42-89A5365AC7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA9B17EC-28D1-4D97-A5F9-698255B347C3}
+	EndGlobalSection
+EndGlobal
