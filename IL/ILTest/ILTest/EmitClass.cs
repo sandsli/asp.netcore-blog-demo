@@ -30,7 +30,7 @@ namespace ILTest
             ConstructorInfo defaultConstructorInfo = typeof(EmitClass).GetConstructor(Type.EmptyTypes);
 
             //generator.DefineLabel();
-            generator..DeclareLocal(typeof(int));
+            generator.DeclareLocal(typeof(int));
 
             generator.Emit(OpCodes.Ldarg_0);
             generator.Emit(OpCodes.Ldarg_1);

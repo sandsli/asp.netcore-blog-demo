@@ -12,13 +12,14 @@ namespace ILTest
     {
         static void Main(string[] args)
         {
-            var a = 1;
-            var b = 2;
-            var c = a + b;
+            //var a = 1;
+            //var b = 2;
+            //var c = a + b;
 
-            var type = EmitClass.Create();
+            //var type = EmitClass.Create();
 
-            Console.WriteLine(type.Name);
+            //Console.WriteLine(type.Name);
+            DemoAssemblyBuilder.Sample();
             Console.Read();
         }
 
